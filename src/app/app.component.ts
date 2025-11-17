@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     const subscription = interval(1000).pipe(
-      map((val) => val * 2 )
+      map((val) => val * 2)
     ).subscribe({
       next: (val) => console.log(val)
     });
